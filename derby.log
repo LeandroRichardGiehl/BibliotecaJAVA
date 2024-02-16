@@ -1,0 +1,31 @@
+Fri Feb 16 19:29:42 BRT 2024 : Apache Derby Servidor de Rede - 10.14.2.0 - (1828579) iniciado e pronto para aceitar conexões na porta 1527 em {3}
+----------------------------------------------------------------
+Fri Feb 16 19:29:42 BRT 2024:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instância a816c00e-018d-b40a-2dae-0000071db732
+no diretório de banco de dados C:\Users\Aluno\Desktop\BibliotecaJAVA\DbBiblioteca 
+
+java.vendor=Oracle Corporation
+java.runtime.version=17.0.8+9-LTS-211
+user.dir=C:\Program Files\Java\jdk-17\db-derby-10.14.2.0-bin
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\Aluno\Desktop\BibliotecaJAVA
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Feb 16 19:29:43 BRT 2024:
+Encerrando a instância a816c00e-018d-b40a-2dae-0000071db732
+Fri Feb 16 19:29:43 BRT 2024 Thread[DRDAConnThread_2,5,main] (DATABASE = DbBiblioteca), (DRDAID = {2}), Banco de dados 'DbBiblioteca' fechado.
+----------------------------------------------------------------
+Fri Feb 16 19:29:53 BRT 2024:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instância 6ede40af-018d-b40a-2dae-0000071db732
+no diretório de banco de dados C:\Users\Aluno\Desktop\BibliotecaJAVA\DbBiblioteca 
+
+java.vendor=Oracle Corporation
+java.runtime.version=17.0.8+9-LTS-211
+user.dir=C:\Program Files\Java\jdk-17\db-derby-10.14.2.0-bin
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\Aluno\Desktop\BibliotecaJAVA
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
