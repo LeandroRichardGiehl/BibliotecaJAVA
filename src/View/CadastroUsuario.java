@@ -4,9 +4,15 @@
  */
 package View;
 
+import Controller.UsuarioController;
+import Model.UsuarioModel;
+import java.util.ArrayList;
+import java.util.Iterator;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
- * @author richa
+ * @author Aluno(a) TDS Noite
  */
 public class CadastroUsuario extends javax.swing.JFrame {
 
@@ -26,36 +32,209 @@ public class CadastroUsuario extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        Nome = new javax.swing.JLabel();
+        Nascimento = new javax.swing.JLabel();
+        Cpf = new javax.swing.JLabel();
+        Email = new javax.swing.JLabel();
+        Endereco = new javax.swing.JLabel();
+        CadastroUsuario = new javax.swing.JLabel();
+        jTextFieldNome = new javax.swing.JTextField();
+        jTextFieldEmail = new javax.swing.JTextField();
+        jTextFieldCpf = new javax.swing.JTextField();
+        jTextFieldNascimento = new javax.swing.JTextField();
+        jTextFieldEndereco = new javax.swing.JTextField();
+        jButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBounds(new java.awt.Rectangle(600, 800, 0, 0));
+        setMaximizedBounds(new java.awt.Rectangle(600, 800, 0, 0));
+        setMaximumSize(new java.awt.Dimension(600, 800));
+        setMinimumSize(new java.awt.Dimension(600, 800));
+        setPreferredSize(new java.awt.Dimension(600, 800));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel1.setText("CADASTRO DO USUARIO");
+        Nome.setBackground(new java.awt.Color(0, 0, 0));
+        Nome.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        Nome.setText("NOME");
+
+        Nascimento.setBackground(new java.awt.Color(0, 0, 0));
+        Nascimento.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        Nascimento.setText("NASCIMENTO");
+
+        Cpf.setBackground(new java.awt.Color(0, 0, 0));
+        Cpf.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        Cpf.setText("CPF");
+
+        Email.setBackground(new java.awt.Color(0, 0, 0));
+        Email.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        Email.setText("EMAIL");
+
+        Endereco.setBackground(new java.awt.Color(0, 0, 0));
+        Endereco.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        Endereco.setText("ENDEREÇO");
+
+        CadastroUsuario.setFont(new java.awt.Font("Bahnschrift", 1, 24)); // NOI18N
+        CadastroUsuario.setText("CADASTRO USUARIO");
+
+        jTextFieldEmail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldEmailActionPerformed(evt);
+            }
+        });
+
+        jTextFieldCpf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldCpfActionPerformed(evt);
+            }
+        });
+
+        jTextFieldNascimento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldNascimentoActionPerformed(evt);
+            }
+        });
+
+        jTextFieldEndereco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldEnderecoActionPerformed(evt);
+            }
+        });
+
+        jButton.setFont(new java.awt.Font("Bahnschrift", 1, 14)); // NOI18N
+        jButton.setText("PRONTO");
+        jButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(160, 160, 160)
-                .addComponent(jLabel1)
-                .addContainerGap(171, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                        .addComponent(Nome)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTextFieldNome))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                        .addComponent(Nascimento)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTextFieldNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(28, 28, 28)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(Cpf)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jTextFieldCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(Email, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTextFieldEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(Endereco, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextFieldEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(246, 246, 246)
+                        .addComponent(CadastroUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(94, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(85, 85, 85))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(59, 59, 59)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(700, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(CadastroUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Nome, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldNome, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Cpf, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(12, 12, 12)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Nascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Email, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Endereco, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
+    private void jTextFieldEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldEmailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldEmailActionPerformed
+
+    private void jTextFieldCpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldCpfActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldCpfActionPerformed
+
+    private void jTextFieldNascimentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldNascimentoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldNascimentoActionPerformed
+
+    private void jTextFieldEnderecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldEnderecoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldEnderecoActionPerformed
+
+    private void jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonActionPerformed
+        String nome = jTextFieldNome.getText();
+        String cpf = jTextFieldCpf.getText();
+        String email = jTextFieldEmail.getText();
+        String endereco = jTextFieldEndereco.getText();
+        String dataNascimento = jTextFieldNascimento.getText();
+      
+        UsuarioController novoUsuario = new UsuarioController();
+        novoUsuario.cadastrarUsuario(nome, cpf, email, endereco, dataNascimento);  
+        
+        listarUsuariosView();
+         
+        CadastroUsuario.setVisible(false); 
+    }//GEN-LAST:event_jButtonActionPerformed
+    public void listarUsuariosView() {
+
+       
+       
+        try {
+
+            DefaultTableModel dtm = (DefaultTableModel) Tabela.getModel();
+            dtm.setRowCount(0);
+            UsuarioController usuarioController = new UsuarioController();
+            ArrayList<UsuarioModel> listaUsuarios = usuarioController.listarUsuariosController();
+            Iterator<UsuarioModel> iterator = listaUsuarios.iterator();
+
+            while (iterator.hasNext()) {
+                UsuarioModel usuario = iterator.next();
+                System.out.println("Dados: " + usuario);
+                dtm.addRow(new Object[]{
+                    usuario.getCodigo(),
+                    usuario.getNome(),
+                    usuario.getCpf(),
+                    usuario.getEndereco(),  
+                });
+            }
+
+        } catch (Exception e) {
+
+        }
+
+    }
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -89,6 +268,17 @@ public class CadastroUsuario extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel CadastroUsuario;
+    private javax.swing.JLabel Cpf;
+    private javax.swing.JLabel Email;
+    private javax.swing.JLabel Endereco;
+    private javax.swing.JLabel Nascimento;
+    private javax.swing.JLabel Nome;
+    private javax.swing.JButton jButton;
+    private javax.swing.JTextField jTextFieldCpf;
+    private javax.swing.JTextField jTextFieldEmail;
+    private javax.swing.JTextField jTextFieldEndereco;
+    private javax.swing.JTextField jTextFieldNascimento;
+    private javax.swing.JTextField jTextFieldNome;
     // End of variables declaration//GEN-END:variables
 }
