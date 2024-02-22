@@ -9,7 +9,6 @@ import Model.UsuarioModel;
 import java.util.ArrayList;
 import java.util.Iterator;
 import javax.swing.table.DefaultTableModel;
-
 /**
  *
  * @author Aluno(a) TDS Noite
@@ -203,17 +202,17 @@ public class CadastroUsuario extends javax.swing.JFrame {
         UsuarioController novoUsuario = new UsuarioController();
         novoUsuario.cadastrarUsuario(nome, cpf, email, endereco, dataNascimento);  
         
-        listarUsuariosView();
+        //listarUsuariosView();
          
-        CadastroUsuario.setVisible(false); 
+        CadastroUsuario.setVisible(true); 
     }//GEN-LAST:event_jButtonActionPerformed
-    public void listarUsuariosView() {
+/*    public void listarUsuariosView() {
 
        
        
         try {
 
-            DefaultTableModel dtm = (DefaultTableModel) Tabela.getModel();
+            DefaultTableModel dtm = (DefaultTableModel)  Principal.Tabela.getModel();
             dtm.setRowCount(0);
             UsuarioController usuarioController = new UsuarioController();
             ArrayList<UsuarioModel> listaUsuarios = usuarioController.listarUsuariosController();
@@ -233,8 +232,7 @@ public class CadastroUsuario extends javax.swing.JFrame {
         } catch (Exception e) {
 
         }
-
-    }
+    }*/
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

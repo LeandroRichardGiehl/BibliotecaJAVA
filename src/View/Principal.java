@@ -60,14 +60,24 @@ public class Principal extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(Tabela);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 260, 720, -1));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 170, 720, -1));
 
         jMenuCadastro.setText("CADASTRO");
 
         jCadastroLivro.setText("Cadastro Livro");
+        jCadastroLivro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCadastroLivroActionPerformed(evt);
+            }
+        });
         jMenuCadastro.add(jCadastroLivro);
 
         jCadastroEditor.setText("Cadastro Editor");
+        jCadastroEditor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCadastroEditorActionPerformed(evt);
+            }
+        });
         jMenuCadastro.add(jCadastroEditor);
 
         jCadastroUsuario.setText("Cadastro Usuario");
@@ -89,10 +99,19 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jCadastroUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCadastroUsuarioActionPerformed
-        CadastroUsuario usuario = new CadastroUsuario();
-        usuario.setVisible(true);
-        
+        CadastroUsuario usuario = new CadastroUsuario ();
+        usuario.setVisible(true);   
     }//GEN-LAST:event_jCadastroUsuarioActionPerformed
+
+    private void jCadastroLivroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCadastroLivroActionPerformed
+        CadastroLivro livro = new CadastroLivro();
+        livro.setVisible(true);  
+    }//GEN-LAST:event_jCadastroLivroActionPerformed
+
+    private void jCadastroEditorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCadastroEditorActionPerformed
+        CadastroUsuario usuario = new CadastroUsuario ();
+        usuario.setVisible(true);  
+    }//GEN-LAST:event_jCadastroEditorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -126,6 +145,7 @@ public class Principal extends javax.swing.JFrame {
             @Override
             public void run() {
                 new Principal().setVisible(true);
+                new CadastroUsuario().setVisible(true);
             }
         });
     }
