@@ -20,4 +20,25 @@ public class UsuarioController {
             UsuarioModel usuario = new UsuarioModel();
             return usuario.listarUsuarios();
         }
+        
+         public ArrayList<UsuarioModel> buscarUsuarioController(String nome){
+            UsuarioModel usuario = new UsuarioModel();
+            return usuario.buscarUsuarios(nome);
+        }
+         
+     public void alterarUsuario(String codigo, String nome, String cpf, String email, String endereco, String dataNascimento) {
+        if ((nome != null && nome.length() > 0) && (cpf != null && cpf.length() > 0)
+                && (email != null && email.length() > 0) && (endereco != null && endereco.length() > 0) 
+                && (dataNascimento != null && dataNascimento.length() > 0)&& (codigo != null && codigo.length() > 0)) {
+            
+            int codigoInt = Integer.parseInt(codigo);
+            
+            UsuarioModel ajusteUsuario = new UsuarioModel(codigoInt, nome, cpf, email, endereco, dataNascimento);
+            ajusteUsuario.alterarUsuario(ajusteUsuario);
+            JOptionPane.showMessageDialog(null, "Ajuste realizado");
+            
+        }else{
+            JOptionPane.showMessageDialog(null, "Informações incorretas!");
+        }
+    }
 }

@@ -22,6 +22,15 @@ public class UsuarioModel {
         this.endereco= endereco;
         this.dataNascimento = dataNascimento;
     }
+    
+        public UsuarioModel(int codigo, String nome, String cpf, String email, String endereco, String dataNascimento) {
+        this.codigo = codigo;
+        this.nome = nome;
+        this.cpf = cpf;
+        this.email = email;
+        this.endereco= endereco;
+        this.dataNascimento = dataNascimento;
+    }
 
     public int getCodigo() {
         return codigo;
@@ -82,4 +91,13 @@ public class UsuarioModel {
    public ArrayList<UsuarioModel> listarUsuarios(){
        return new UsuarioBancoDados().listarTodosUsuarios();
    }
+   
+   public ArrayList<UsuarioModel> buscarUsuarios(String nome){
+       return new UsuarioBancoDados().buscarUsuario(nome);
+   }
+   
+   public void alterarUsuario(UsuarioModel usuarioAjuste) {
+        UsuarioBancoDados ajusteDados = new  UsuarioBancoDados();
+        ajusteDados.alterarUsuarioDB(usuarioAjuste);
+    }
 }
