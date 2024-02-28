@@ -4,31 +4,32 @@ import DAO.UsuarioBancoDados;
 import java.util.ArrayList;
 
 public class UsuarioModel {
+
     private int codigo;
-   private String nome;
-   private String cpf;
-   private String email;
-   private String endereco;
-   private String dataNascimento;
-   
-   public UsuarioModel(){
-       
-   }
+    private String nome;
+    private String cpf;
+    private String email;
+    private String endereco;
+    private String dataNascimento;
+
+    public UsuarioModel() {
+
+    }
 
     public UsuarioModel(String nome, String cpf, String email, String endereco, String dataNascimento) {
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
-        this.endereco= endereco;
+        this.endereco = endereco;
         this.dataNascimento = dataNascimento;
     }
-    
-        public UsuarioModel(int codigo, String nome, String cpf, String email, String endereco, String dataNascimento) {
+
+    public UsuarioModel(int codigo, String nome, String cpf, String email, String endereco, String dataNascimento) {
         this.codigo = codigo;
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
-        this.endereco= endereco;
+        this.endereco = endereco;
         this.dataNascimento = dataNascimento;
     }
 
@@ -80,24 +81,27 @@ public class UsuarioModel {
         this.dataNascimento = dataNascimento;
     }
 
-    
-    
-   public void cadastrarUsuario(UsuarioModel novoUsuario){
-       UsuarioBancoDados novoRegistro = new UsuarioBancoDados();
-       novoRegistro.inserirUsuarioDB(novoUsuario);
-       
-   }
-   
-   public ArrayList<UsuarioModel> listarUsuarios(){
-       return new UsuarioBancoDados().listarTodosUsuarios();
-   }
-   
-   public ArrayList<UsuarioModel> buscarUsuarios(String nome){
-       return new UsuarioBancoDados().buscarUsuario(nome);
-   }
-   
-   public void alterarUsuario(UsuarioModel usuarioAjuste) {
-        UsuarioBancoDados ajusteDados = new  UsuarioBancoDados();
+    public void cadastrarUsuario(UsuarioModel novoUsuario) {
+        UsuarioBancoDados novoRegistro = new UsuarioBancoDados();
+        novoRegistro.inserirUsuarioDB(novoUsuario);
+
+    }
+
+    public ArrayList<UsuarioModel> listarUsuarios() {
+        return new UsuarioBancoDados().listarTodosUsuarios();
+    }
+
+    public ArrayList<UsuarioModel> buscarUsuarios(String nome) {
+        return new UsuarioBancoDados().buscarUsuario(nome);
+    }
+
+    public void alterarUsuario(UsuarioModel usuarioAjuste) {
+        UsuarioBancoDados ajusteDados = new UsuarioBancoDados();
         ajusteDados.alterarUsuarioDB(usuarioAjuste);
+    }
+
+    public void excluirUsuario(int codigo) {
+        UsuarioBancoDados bancoDados = new UsuarioBancoDados();
+        bancoDados.excluirUsuarioDB(codigo);
     }
 }

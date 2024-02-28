@@ -8,6 +8,7 @@ import Controller.UsuarioController;
 import Model.UsuarioModel;
 import java.util.ArrayList;
 import java.util.Iterator;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -51,6 +52,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButtonPesquisar = new javax.swing.JButton();
         jButtonEditar = new javax.swing.JButton();
         jButtonSalvarEdicao = new javax.swing.JButton();
+        jButtonExcluir = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTableUsuario = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
@@ -91,10 +93,17 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonSalvarEdicao.setText("SALVER EDIÇÃO");
+        jButtonSalvarEdicao.setText("SALVAR EDIÇÃO");
         jButtonSalvarEdicao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonSalvarEdicaoActionPerformed(evt);
+            }
+        });
+
+        jButtonExcluir.setText("EXCLUIR");
+        jButtonExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonExcluirActionPerformed(evt);
             }
         });
 
@@ -103,7 +112,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Codigo", "Nome", "CPF", "Endereço", "Data de nascimento", "Email Pessoal"
+                "Codigo", "Nome", "CPF", "Email pessoal", "Endereço", "Data de Nascimento"
             }
         ) {
             Class[] types = new Class [] {
@@ -167,9 +176,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
                                 .addComponent(jButtonEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jButtonSalvarEdicao)
-                                .addGap(194, 436, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jButtonExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelUsuarioLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 250, Short.MAX_VALUE)
                                 .addComponent(jButtonPesquisar)
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanelUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -208,7 +219,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
                         .addGroup(jPanelUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButtonCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButtonEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonSalvarEdicao, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jButtonSalvarEdicao, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButtonExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(99, 99, 99)))
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1426, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -277,6 +289,21 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         listarUsuariosView();
     }//GEN-LAST:event_jButtonSalvarEdicaoActionPerformed
+
+    private void jButtonExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonExcluirActionPerformed
+        //Botão para excluir Usuario
+        int selectedRow = jTableUsuario.getSelectedRow();
+        if (selectedRow == -1) {
+            System.out.println("Selecione um usuário para excluir.");
+            return;
+        }
+
+        String codigo = jTableUsuario.getValueAt(selectedRow, 0).toString();
+        UsuarioController usuarioController = new UsuarioController();
+        usuarioController.excluirUsuarioController(codigo);
+
+        listarUsuariosView();
+    }//GEN-LAST:event_jButtonExcluirActionPerformed
 
     public void listarUsuariosView() {
 
@@ -374,6 +401,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonCadastrar;
     private javax.swing.JButton jButtonEditar;
+    private javax.swing.JButton jButtonExcluir;
     private javax.swing.JButton jButtonPesquisar;
     private javax.swing.JButton jButtonSalvarEdicao;
     private javax.swing.JLabel jCpf;

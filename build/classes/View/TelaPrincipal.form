@@ -108,10 +108,12 @@
                                       <Component id="jButtonEditar" min="-2" pref="96" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="jButtonSalvarEdicao" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="194" pref="436" max="32767" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jButtonExcluir" min="-2" pref="96" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace max="32767" attributes="0"/>
+                                      <EmptySpace pref="250" max="32767" attributes="0"/>
                                       <Component id="jButtonPesquisar" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
@@ -162,6 +164,7 @@
                                   <Component id="jButtonCadastrar" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
                                   <Component id="jButtonEditar" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
                                   <Component id="jButtonSalvarEdicao" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jButtonExcluir" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
                           </Group>
@@ -235,10 +238,18 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButtonSalvarEdicao">
               <Properties>
-                <Property name="text" type="java.lang.String" value="SALVER EDI&#xc7;&#xc3;O"/>
+                <Property name="text" type="java.lang.String" value="SALVAR EDI&#xc7;&#xc3;O"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonSalvarEdicaoActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonExcluir">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="EXCLUIR"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonExcluirActionPerformed"/>
               </Events>
             </Component>
             <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -255,9 +266,9 @@
                         <Column editable="false" title="Codigo" type="java.lang.String"/>
                         <Column editable="false" title="Nome" type="java.lang.String"/>
                         <Column editable="false" title="CPF" type="java.lang.String"/>
+                        <Column editable="false" title="Email pessoal" type="java.lang.String"/>
                         <Column editable="false" title="Endere&#xe7;o" type="java.lang.String"/>
-                        <Column editable="false" title="Data de nascimento" type="java.lang.String"/>
-                        <Column editable="false" title="Email Pessoal" type="java.lang.String"/>
+                        <Column editable="false" title="Data de Nascimento" type="java.lang.String"/>
                       </Table>
                     </Property>
                   </Properties>

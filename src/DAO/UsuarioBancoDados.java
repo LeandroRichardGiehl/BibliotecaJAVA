@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 
 public class UsuarioBancoDados {
+
     public void inserirUsuarioDB(UsuarioModel novoUsuario) {
 
         String sql = "INSERT INTO usuario (nome, cpf, email, endereco, dataNascimento) values (?, ?, ?, ?, ?)";
@@ -21,7 +22,7 @@ public class UsuarioBancoDados {
             stmt.setString(3, novoUsuario.getEmail());
             stmt.setString(4, novoUsuario.getEndereco());
             stmt.setString(5, novoUsuario.getDataNascimento());
-            
+
             stmt.execute();
             System.out.println("Registro realizado com sucesso!");
         } catch (Exception e) {
@@ -48,18 +49,17 @@ public class UsuarioBancoDados {
         }
     }
 
-    
-    public ArrayList<UsuarioModel> listarTodosUsuarios(){
-    
+    public ArrayList<UsuarioModel> listarTodosUsuarios() {
+
         ResultSet rs = null;
         Connection conn = null;
         PreparedStatement stmt = null;
-        
+
         UsuarioModel usuario = null;
         ArrayList<UsuarioModel> listaUsuarios = null;
-        
+
         String sql = "SELECT * FROM ROOT.USUARIO";
-        
+
         try {
             conn = new ConexaoDB().getConnection();
             stmt = conn.prepareStatement(sql);
@@ -77,7 +77,7 @@ public class UsuarioBancoDados {
                     listaUsuarios.add(usuario);
                 }
             }
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Erro ao realizar regitro!");
         } finally {
@@ -102,19 +102,19 @@ public class UsuarioBancoDados {
         System.out.println("Lista" + listaUsuarios);
         return listaUsuarios;
     }
-    
-    public ArrayList<UsuarioModel> buscarUsuario(String nome){
-    
+
+    public ArrayList<UsuarioModel> buscarUsuario(String nome) {
+
         ResultSet rs = null;
         Connection conn = null;
         PreparedStatement stmt = null;
-        
+
         UsuarioModel usuario = null;
         ArrayList<UsuarioModel> listaUsuarios = null;
-        
-        String sql = "SELECT * FROM ROOT.USUARIO WHERE nome LIKE '%" + 
-                nome + "%' ORDER BY nome";
-        
+
+        String sql = "SELECT * FROM ROOT.USUARIO WHERE nome LIKE '%"
+                + nome + "%' ORDER BY nome";
+
         try {
             conn = new ConexaoDB().getConnection();
             stmt = conn.prepareStatement(sql);
@@ -126,13 +126,13 @@ public class UsuarioBancoDados {
                     usuario.setCodigo(rs.getInt("codigo"));
                     usuario.setNome(rs.getString("nome"));
                     usuario.setCpf(rs.getString("cpf"));
-                    usuario.setEmail(rs.getString("email"));                    
-                    usuario.setEndereco(rs.getString("endereco"));                    
-                    usuario.setDataNascimento(rs.getString("dataNascimento"));                
+                    usuario.setEmail(rs.getString("email"));
+                    usuario.setEndereco(rs.getString("endereco"));
+                    usuario.setDataNascimento(rs.getString("dataNascimento"));
                     listaUsuarios.add(usuario);
                 }
             }
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Erro ao selecionar contatos!");
         } finally {
@@ -156,15 +156,14 @@ public class UsuarioBancoDados {
         }
         return listaUsuarios;
     }
-    
-    
-    public void alterarUsuarioDB(UsuarioModel usuarioAjuste){
+
+    public void alterarUsuarioDB(UsuarioModel usuarioAjuste) {
 
         Connection conn = null;
         PreparedStatement stmt = null;
-        
+
         String sql = "UPDATE ROOT.USUARIO SET nome=?, cpf=?, email=?, endereco=?, dataNascimento=? WHERE codigo=?";
-        
+
         try {
             conn = new ConexaoDB().getConnection();
             stmt = conn.prepareStatement(sql);
@@ -179,7 +178,7 @@ public class UsuarioBancoDados {
         } catch (Exception e) {
             System.out.println("Erro ao realizar a alteração no registro!");
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 if (stmt != null) {
                     stmt.close();
@@ -199,14 +198,14 @@ public class UsuarioBancoDados {
             }
         }
     }
-    
-    public void excluirUsuarioDB(int codigo){
-    
+
+    public void excluirUsuarioDB(int codigo) {
+
         Connection conn = null;
         PreparedStatement stmt = null;
-        
+
         String sql = "DELETE FROM ROOT.USUARIO where codigo=?";
-        
+
         try {
             conn = new ConexaoDB().getConnection();
             stmt = conn.prepareStatement(sql);
@@ -216,7 +215,7 @@ public class UsuarioBancoDados {
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Erro ao realizar a exclusão do registro.");
-        }finally {
+        } finally {
             try {
                 if (stmt != null) {
                     stmt.close();
@@ -235,6 +234,6 @@ public class UsuarioBancoDados {
                 e.printStackTrace();
             }
         }
-        
+
     }
 }
