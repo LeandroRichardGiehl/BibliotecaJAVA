@@ -77,52 +77,54 @@
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="jTextFieldNome" min="-2" pref="197" max="-2" attributes="0"/>
                                   </Group>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                                      <Component id="jButtonCadastrar" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                                      <Component id="jButtonEditar" min="-2" pref="96" max="-2" attributes="0"/>
+                                  </Group>
                                   <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
                                       <Component id="jCpf" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="jTextFieldCpf" min="-2" pref="197" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="jDataDeNascimento" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jTextFieldNascimento" min="-2" pref="197" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="jEndereco" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jTextFieldEndereco" min="-2" pref="197" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jDataDeNascimento" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="jTextFieldNascimento" min="-2" pref="197" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="jEndereco" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="jTextFieldEndereco" min="-2" pref="197" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                                       <Component id="jEmailPessoal" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="jTextFieldEmail" min="-2" pref="197" max="-2" attributes="0"/>
                                   </Group>
-                              </Group>
-                              <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
-                              <Component id="jButtonCadastrar" min="-2" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                                      <Component id="jButtonEditar" min="-2" pref="96" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                                       <Component id="jButtonSalvarEdicao" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
                                       <Component id="jButtonExcluir" min="-2" pref="96" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace pref="250" max="32767" attributes="0"/>
-                                      <Component id="jButtonPesquisar" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jTextFieldPesquisar" min="-2" pref="315" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
+                              <EmptySpace pref="431" max="32767" attributes="0"/>
+                              <Component id="jButtonPesquisar" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldPesquisar" min="-2" pref="315" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                           </Group>
                           <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
                       </Group>
@@ -132,42 +134,35 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jNomeCompleto" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jEndereco" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldEndereco" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jEmailPessoal" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldEmail" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldNome" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jCpf" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                                  <Component id="jDataDeNascimento" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldNascimento" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldCpf" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jButtonPesquisar" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldPesquisar" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <EmptySpace pref="60" max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jButtonCadastrar" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
-                                  <Component id="jButtonEditar" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
-                                  <Component id="jButtonSalvarEdicao" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
-                                  <Component id="jButtonExcluir" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
-                          </Group>
+                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jNomeCompleto" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jEndereco" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldEndereco" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jEmailPessoal" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jCpf" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                          <Component id="jDataDeNascimento" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldNascimento" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldCpf" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="90" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jButtonCadastrar" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
+                          <Component id="jButtonEditar" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
+                          <Component id="jButtonSalvarEdicao" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
+                          <Component id="jButtonExcluir" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jButtonPesquisar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldPesquisar" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Component id="jScrollPane1" min="-2" pref="1426" max="-2" attributes="0"/>
                   </Group>
@@ -279,6 +274,420 @@
               </SubComponents>
             </Container>
             <Component class="javax.swing.JLabel" name="jLabel2">
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanelLivro">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="CADASTRO LIVRO">
+                <Property name="tabTitle" type="java.lang.String" value="CADASTRO LIVRO"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane2" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="jLabelPaginas" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelGenero" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelTitulo" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jButtonSalvar" min="-2" pref="83" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="jTextFieldTitulo" alignment="0" min="-2" pref="148" max="-2" attributes="0"/>
+                                                  <Component id="jTextFieldGenero" alignment="0" min="-2" pref="148" max="-2" attributes="0"/>
+                                                  <Component id="jTextFieldPaginas" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                                              <Component id="jButtonAlterar" min="-2" pref="83" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
+                                              <Component id="jLabelResumo" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jScrollPane3" min="-2" pref="221" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                                              <Component id="jButtonSalvarAlteracao" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                                              <Component id="jButtonDelete" min="-2" pref="83" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabel3" min="-2" pref="10" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="0" pref="1166" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="jButtonPesquisar2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jTextFieldPesquisar1" min="-2" pref="306" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jScrollPane3" min="-2" pref="119" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabelTitulo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldTitulo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelResumo" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabelGenero" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldGenero" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabelPaginas" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldPaginas" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jButtonSalvar" alignment="3" min="-2" pref="54" max="-2" attributes="0"/>
+                                  <Component id="jButtonAlterar" alignment="3" min="-2" pref="54" max="-2" attributes="0"/>
+                                  <Component id="jButtonSalvarAlteracao" alignment="3" min="-2" pref="54" max="-2" attributes="0"/>
+                                  <Component id="jButtonDelete" alignment="3" min="-2" pref="54" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="52" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jTextFieldPesquisar1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButtonPesquisar2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane2" min="-2" pref="1423" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTable" name="jTableLivro">
+                  <Properties>
+                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                      <Table columnCount="5" rowCount="5">
+                        <Column editable="false" title="Codigo" type="java.lang.String"/>
+                        <Column editable="false" title="T&#xed;tulo" type="java.lang.String"/>
+                        <Column editable="false" title="G&#xea;nero" type="java.lang.String"/>
+                        <Column editable="false" title="P&#xe1;ginas" type="java.lang.String"/>
+                        <Column editable="false" title="Resumo" type="java.lang.String"/>
+                      </Table>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTableLivroMouseClicked"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLabelTitulo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="T&#xcd;TULO:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabelGenero">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="G&#xca;NERO:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabelPaginas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="N&#xda;MERO DE P&#xc1;GINAS:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabelResumo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="RESUMO DO LIVRO:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel3">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTextFieldTitulo">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldTituloActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTextFieldGenero">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTextFieldPaginas">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTextFieldPesquisar1">
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonSalvar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="SALVAR"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonSalvarActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonAlterar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ALTERAR"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonAlterarActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonSalvarAlteracao">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="SALVAR ALTERA&#xc7;&#xc3;O"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonSalvarAlteracaoActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonDelete">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="DELETE"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonDeleteActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonPesquisar2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pesquisar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonPesquisar2ActionPerformed"/>
+              </Events>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextPane" name="jTextPaneResumo">
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanelAutor">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="CADASTRO AUTOR">
+                <Property name="tabTitle" type="java.lang.String" value="CADASTRO AUTOR"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane4" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jButtonSalvar2" min="-2" pref="89" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                                              <Component id="jButtonAlterar2" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                                              <Component id="jButtonSalvarAuteracao" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                                              <Component id="jButtonDeletar2" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="jTextFieldNome2" max="32767" attributes="0"/>
+                                                  <Component id="jTextFieldNacionalidade" pref="242" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="0" pref="1361" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="jButtonPesquisar3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jTextFieldPesquisar3" min="-2" pref="347" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldNome2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldNacionalidade" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jButtonSalvar2" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
+                          <Component id="jButtonAlterar2" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Component id="jButtonSalvarAuteracao" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
+                          <Component id="jButtonDeletar2" alignment="3" min="-2" pref="61" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="48" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel6" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                              <Component id="jButtonPesquisar3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldPesquisar3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane4" min="-2" pref="1430" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTable" name="jTableAutor">
+                  <Properties>
+                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                      <Table columnCount="3" rowCount="3">
+                        <Column editable="false" title="Codigo" type="java.lang.String"/>
+                        <Column editable="false" title="Nome" type="java.lang.String"/>
+                        <Column editable="false" title="Nacionalidade" type="java.lang.String"/>
+                      </Table>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTableAutorMouseClicked"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLabel4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="NOME:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel5">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="NACIONALIDADE:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTextFieldNome2">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTextFieldNacionalidade">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldNacionalidadeActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTextFieldPesquisar3">
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonSalvar2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="SALVAR"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonSalvar2ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonAlterar2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ALTERAR"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonAlterar2ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonSalvarAuteracao">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="SALVAR ALTERA&#xc7;&#xc3;O"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonSalvarAuteracaoActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonDeletar2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="DELETAR"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonDeletar2ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonPesquisar3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pesquisar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonPesquisar3ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel6">
             </Component>
           </SubComponents>
         </Container>
